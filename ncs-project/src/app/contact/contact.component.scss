@@ -1,0 +1,36 @@
+.contact {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form {
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 100%;
+    border: #f5f5f5 1px solid;
+
+    &:focus {
+      outline-color: #20e0f5;
+    }
+  }
+
+  .btn {
+    padding: 12px 0;
+    margin-top: 20px;
+  }
+}
+
+.column-2 {
+  background: rgb(246, 242, 242);
+}

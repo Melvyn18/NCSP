@@ -1,0 +1,83 @@
+<div class="product-component bg-light">
+    <div class="container">
+        <div class="products">
+            <div class="prod-item">
+                <div>
+                    <img class="bag-image" [src]="products[0].imagePath" alt="">
+
+
+                </div>
+                <div class="info">
+                    <h2>{{products[0].name}}</h2>
+
+                    <h2>₹{{products[0].amount}}</h2>
+                    <div class="item-quantity">
+                        <div class="info">
+                            <button routerLink="/bag" class="btn btn-gray button">More Info</button>
+                            <button [disabled]="bagQuantity == 0" class="btn btn-primary button"
+                                (click)="onAddBag()">Add to Cart</button>
+                        </div>
+                        <div class="quantity">
+                            <button [disabled]="bagQuantity == 0" class="btn quan" (click)="onBagMinus()">-</button>
+                            <p>{{bagQuantity}}</p>
+                            <button class="btn quan" (click)="onBagPlus()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-item">
+                <div>
+                    <img [src]="products[1].imagePath" alt="">
+
+
+                </div>
+                <div class="info">
+                    <h2>{{products[1].name}}</h2>
+
+                    <h2>${{products[1].amount}}</h2>
+                    <div class="item-quantity">
+                        <div class="info">
+                            <button routerLink="/bottle" class="btn btn-gray">More Info</button>
+                            <button [disabled]="bottleQuantity == 0" class="btn btn-primary">Add to Cart</button>
+                        </div>
+
+                        <div class="quantity">
+                            <button [disabled]="bottleQuantity == 0" class="btn quan"
+                                (click)="onBottleMinus()">-</button>
+                            <p>{{bottleQuantity}}</p>
+                            <button class="btn quan" (click)="onBottlePlus()">+</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="prod-item">
+                <div>
+                    <img [src]="products[2].imagePath" alt="">
+
+
+                </div>
+                <div class="info">
+                    <h2>{{products[2].name}}</h2>
+
+                    <h2>${{products[2].amount}}</h2>
+                    <div class="item-quantity">
+                        <div class="info">
+                            <button routerLink="/mug" class="btn btn-gray">More Info</button>
+                            <button [disabled]="mugQuantity == 0" class="btn btn-primary">Add to Cart</button>
+                        </div>
+
+                        <div class="quantity">
+                            <button [disabled]="mugQuantity == 0" class="btn quan" (click)="onMugMinus()">-</button>
+                            <p>{{mugQuantity}}</p>
+                            <button class="btn quan" (click)="onMugPlus()">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+    <div class="column-2 bg-light">
+        <h2>Enter Card Details</h2>
+        <form action="" class="callback-form">
+            <div class="form">
+                <label for="name">Enter card number</label>
+                <input type="text" name="card-number" id="card-number">
+            </div>
+            <div class="form">
+                <label for="name">Enter Card holder name</label>
+                <input type="text" name="card-name" id="card-name">
+            </div>
+            <div class="form line">
+                <div class="line-items">
+                    <label for="name">Expiry Date</label>
+                    <input class="medium-width" type="month" name="expiry" id="expiry">
+                </div>
+                <div class="line-items">
+                    <label for="name">CVV</label>
+                    <input class="small-width" type="text" name="cvv" id="cvv">
+                </div>
+            </div>
+            <button (click)="onClick()" routerLink="/thanks" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+

@@ -1,0 +1,108 @@
+a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 30px;
+  background: white;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+  }
+}
+
+
+.hero * {
+  z-index: 10;
+}
+
+.product {
+  width: 60%;
+  border-radius: 75%;
+  margin-left: 30px;
+}
+
+.post {
+  padding: 50px 30px;
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+  }
+
+  .meta {
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+  }
+}
+
+// .bottle-image{
+//   width: 20%;
+//   height: 10px;
+// }
+
+.bag-image {
+  height: 600px;
+}
+
+.flex-columns {
+  img {
+    border-radius: 10px;
+  }
+}
+
+.home {
+  padding-bottom: 15px;
+}
+
+.home-image {
+  background: url('../../assets/img/ncsbag.jpg') no-repeat center center/cover;
+  height: 600px;
+  opacity: 0.6;
+
+  p {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 170px;
+    font-size: 35;
+    font-weight: 600;
+  }
+
+  button {
+    text-align: center;
+    padding-top: 170px;
+  }
+}

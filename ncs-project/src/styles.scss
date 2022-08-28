@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+/* Text Colors */
+.text-primary {
+  color: #3cdbec;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  // padding: 10px 30px;
+  color: white;
+  background-color: #46c7eb;
+  border: none;
+  border-radius: 5px;
+
+  :hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-primary,
+.bg-primary {
+  background: #21c2fd;
+  color: white;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: #0284d0;
+  color: white;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #333;
+  color: white;
+}
+
+.btn-light,
+.bg-light {
+  background: #c8ced8 !important;
+  color: #333;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* text-align: center; */
+  height: 100%;
+}
+
+.flex-items>div {
+  padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns {
+  .flex-reverse {
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .row {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    // margin-bottom: 10px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin-left: 30px;
+
+    .column-1,
+    .column-2 {
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .column-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 30px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+}
+
+/* Section header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex grid */
+.flex-grid {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+}
